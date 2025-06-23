@@ -34,10 +34,12 @@ const App: React.FC = () => {
       <main>
         <Hero />
         <section className="container mx-auto py-12">
-          <h2 className="text-4xl font-display text-center mb-8 text-neon-blue">Our Games</h2>
+          <h2 className="text-4xl font-display text-center mb-8 text-neon-blue animate-fadeIn">Our Games</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {games.map((game) => (
-              <GameCard key={game.title} {...game} />
+            {games.map((game, index) => (
+              <div key={game.title} className="animate-slideInUp" style={{ animationDelay: `${index * 0.1}s` }}>
+                <GameCard {...game} />
+              </div>
             ))}
           </div>
         </section>
