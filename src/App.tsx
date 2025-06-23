@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import GameCard from './components/GameCard';
 import Footer from './components/Footer';
 import FeaturedGames from './components/FeaturedGames';
+import WhyChooseUs from './components/WhyChooseUs';
 
 const games = [
   {
@@ -35,6 +36,7 @@ const App: React.FC = () => {
       <main>
         <Hero />
         <FeaturedGames />
+        <WhyChooseUs />
         <section className="container mx-auto py-12">
           <h2 className="text-4xl font-display text-center mb-8 text-neon-blue animate-fadeIn">Our Games</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
