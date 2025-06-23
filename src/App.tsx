@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import GameCard from './components/GameCard';
+import Footer from './components/Footer';
 
 const games = [
   {
@@ -41,6 +42,7 @@ const App: React.FC = () => {
           </div>
         </section>
       </main>
+      <Footer />
     </div>
   );
 };
